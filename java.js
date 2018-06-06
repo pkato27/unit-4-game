@@ -25,24 +25,47 @@ $("#button2").attr("data-value", crystal2)
 $("#button3").attr("data-value", crystal3)
 $("#button4").attr("data-value", crystal4)
 
+// reset 
+function reset(){
+  random=Math.floor((Math.random() * (120-19)) + 19);
+  console.log(random)
+  $('#randomNumber').text("Number: " + random);
+crystal1 = Math.floor((Math.random() * (12-1)) + 1)
+crystal2 = Math.floor((Math.random() * (12-1)) + 1)
+crystal3 = Math.floor((Math.random() * (12-1)) + 1)
+crystal4 = Math.floor((Math.random() * (12-1)) + 1)
+totalScore= 0;
+  $('#totalScore').text("Your Total Score: " + totalScore);
+  } 
+
+
+
 // alerts winner and loser and add 1 to what ever one you achieve.
 function winner(){
     alert("You won! " + random + ' ' + totalScore);
       wins++; 
       $('#wins').text("Wins:" + wins);
+      reset();
+
  
     }
     function loser(){
-        alert("you are a loser" + ' ' + random + ' ' + totalScore);
+        alert("your total score exceeded the number");
         losses++
         $('#losses').text("Losses:" + losses)
+        reset();
     }
 
     //button 1
 
 $('#button1').on ('click', function(){
     totalScore = totalScore + crystal1;
-   $('randomNumber').text(totalScore); 
+    var value1 = $("#button1").attr("data-value");
+    totalScore = (+value1) + totalScore;
+    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
+    console.log(totalScore);
+   
+    $('randomNumber').text(totalScore); 
           //sets win/lose conditions
         if (totalScore === random){
           winner();
@@ -52,15 +75,6 @@ $('#button1').on ('click', function(){
         }   
   })  
 
-
-$("#button1").on('click',function(){
-    var value1 = $("#button1").attr("data-value");
-    totalScore = (+value1) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p> "+ totalScore);
-    console.log(totalScore);
-  
- 
-});
 
 //button 2
 
@@ -81,17 +95,13 @@ $('#button2').on ('click', function(){
 
   })  
 
-
-/*$("#button2").on('click',function(){
- 
-    var value2 = $("#button2").attr("data-value");
-    totalScore = (+value2) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
-    console.log(totalScore);
-});*/
-
 //button 3
 $('#button3').on ('click', function(){
+  var value3 = $("#button3").attr("data-value");
+  totalScore = (+value3) + totalScore;
+  $("#totalScore").html("<p> Your Total Score: </p>" + totalScore  );
+  console.log(totalScore);
+
     totalScore = totalScore + crystal1;
    $('randomNumber').text(totalScore); 
           //sets win/lose conditions
@@ -102,18 +112,13 @@ $('#button3').on ('click', function(){
           loser();
         }   
   })  
-
-$("#button3").on('click',function(){
-
-    var value3 = $("#button3").attr("data-value");
-    totalScore = (+value3) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p>" + totalScore  );
-    console.log(totalScore);
- 
-});
 
 // button 4 
 $('#button4').on ('click', function(){
+  var value4 = $("#button4").attr("data-value");
+    totalScore = (+value4) + totalScore;
+    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
+    console.log(totalScore);
     totalScore = totalScore + crystal1;
    $('randomNumber').text(totalScore); 
           //sets win/lose conditions
@@ -125,16 +130,6 @@ $('#button4').on ('click', function(){
         }   
   })  
 
-$("#button4").on('click',function(){
-
-    var value4 = $("#button4").attr("data-value");
-    totalScore = (+value4) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
-    console.log(totalScore);
- 
-});
-
- 
 
 
 

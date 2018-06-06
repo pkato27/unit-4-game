@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color:lightcoral">
    
     <div class="container">
         <div class="row">
@@ -50,11 +50,12 @@
 <div class="container">
     <div class="row">
         <!-- The random button when button pressed goes here-->
-        <div id="randomNumber" class="col-4" style="border: 3px dotted green">Number:</div>
-        <div id="totalScore" class="col-lg-6" style="border: 3px solid orange">Your Total Score:</div>
-        <div id="wins" class="col-lg-2" style="border: 3px dotted lightcoral" >Wins:
-         <div id="losses">Losses:</div> <!-- ??-->
-        </div>
+        <div id="randomNumber" class="col-4" style=" border-top: 3px solid lightblue; border: 3px solid lightblue">Number:</div>
+        <div id="totalScore" class="col-lg-6" style="border-top: 3px solid lightblue; border-left: 3px solid lightblue; border-right: 3px solid lightblue; border-bottom: 3px solid lightblue">Your Total Score:</div>
+        <div class="col-md-2 w">
+            <div id="wins" style="border: 3px dotted lightcoral" >Wins:</div>
+            <div id="losses">Losses:</div> 
+       </div>
         <div class="col"></div>
     </div>
 </div>
@@ -78,15 +79,6 @@
     </div>
 </div>
 
-<!--footer-->
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4 style="border: 4px solid blue; text-align: center"> Footer</h4>
-        </div>
-    </div>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="java.js"></script>

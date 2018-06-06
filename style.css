@@ -10,10 +10,6 @@ ul li {
     list-style-type: none;
 }
 
-body{
-    background-color:lightcoral;
-}
-
 #button1 {
     margin:10px;
     
@@ -31,4 +27,7 @@ body{
 
 }
 
+.w {
+    border: 3px solid lightblue;
+}
 
