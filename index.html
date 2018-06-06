@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>
+        Donut Game
+
+    </title>
+    <!--Links to fonts, bootstrap, and my css-->
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1 class="display-4" style="text-align: center; font-family: Modak; color: rgb(226, 11, 11); font-size: 80px">The Donut Game!</h1>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Creating a row for Game Rules-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <ul>
+                <li style="text-align: center"><strong>The Rules!</strong></li><br>
+                <li>You will be given a random number at the start of the game.</li><br>
+                <li> There are four donuts below. By clicking on a donut you will add a specific amount of points to your total score.</li><br>
+                <li>You win the game by matching you total score to the random number. You lose the game if your total score goes above the random number. </li><br>
+                <li>The value of each donut is hidden from you until you click on it.</li><br>
+                <li> Each time when the game starts, the game will change the values of each donut.</li><br>
+            </ul>
+        </div>
+        <div class="col-lg-6">2 of 2</div>
+    </div>
+</div>
+
+<!--Jumbo tron for game flow/ buttons-->
+
+
+<div class="container">
+    <div class="row">
+        <!-- The random button when button pressed goes here-->
+        <div id="randomNumber" class="col-4" style="border: 3px dotted green">Number:</div>
+        <div id="totalScore" class="col-lg-6" style="border: 3px solid orange">Your Total Score:</div>
+        <div id="wins" class="col-lg-2" style="border: 3px dotted lightcoral" >Wins:
+         <div id="losses">Losses:</div> <!-- ??-->
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<!-- Buttons-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+         <div class="col-md-7">
+         
+            <button id="button1"><img style="height: 70px;" src="https://media.istockphoto.com/photos/donut-with-sprinkles-isolated-picture-id538335769?k=6&m=538335769&s=612x612&w=0&h=3tWMzxWCN99V21CcbUny2TQBsYklc1es3gARr4add7s="></button>
+
+            <button id="button2"><img style="height: 70px;" src="https://media.istockphoto.com/photos/donut-with-sprinkles-isolated-picture-id538335769?k=6&m=538335769&s=612x612&w=0&h=3tWMzxWCN99V21CcbUny2TQBsYklc1es3gARr4add7s="></button>
+            
+            <button id="button3"><img style="height: 70px;" src="https://media.istockphoto.com/photos/donut-with-sprinkles-isolated-picture-id538335769?k=6&m=538335769&s=612x612&w=0&h=3tWMzxWCN99V21CcbUny2TQBsYklc1es3gARr4add7s="></button>
+
+            <button id="button4"><img style="height: 70px;" src="https://media.istockphoto.com/photos/donut-with-sprinkles-isolated-picture-id538335769?k=6&m=538335769&s=612x612&w=0&h=3tWMzxWCN99V21CcbUny2TQBsYklc1es3gARr4add7s="></button>
+        </div>
+        
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!--footer-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 style="border: 4px solid blue; text-align: center"> Footer</h4>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
