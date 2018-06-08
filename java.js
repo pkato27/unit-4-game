@@ -62,7 +62,7 @@ $('#button1').on ('click', function(){
     totalScore = totalScore + crystal1;
     var value1 = $("#button1").attr("data-value");
     totalScore = (+value1) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
+    $("#totalScore").html("<p> Your Total Score: " + totalScore + "</p>");
     console.log(totalScore);
    
     $('randomNumber').text(totalScore); 
@@ -81,7 +81,7 @@ $('#button1').on ('click', function(){
 $('#button2').on ('click', function(){
   var value2 = $("#button2").attr("data-value");
   totalScore = (+value2) + totalScore;
-  $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
+  $("#totalScore").html("<p> Your Total Score: " + totalScore + "</p>");
   console.log(totalScore);
 
    $('randomNumber').text(totalScore); 
@@ -99,7 +99,7 @@ $('#button2').on ('click', function(){
 $('#button3').on ('click', function(){
   var value3 = $("#button3").attr("data-value");
   totalScore = (+value3) + totalScore;
-  $("#totalScore").html("<p> Your Total Score: </p>" + totalScore  );
+  $("#totalScore").html("<p> Your Total Score: " + totalScore + "</p>" );
   console.log(totalScore);
 
     totalScore = totalScore + crystal1;
@@ -117,7 +117,7 @@ $('#button3').on ('click', function(){
 $('#button4').on ('click', function(){
   var value4 = $("#button4").attr("data-value");
     totalScore = (+value4) + totalScore;
-    $("#totalScore").html("<p> Your Total Score: </p> " + totalScore);
+    $("#totalScore").html("<p> Your Total Score: " + totalScore + "</p>");
     console.log(totalScore);
     totalScore = totalScore + crystal1;
    $('randomNumber').text(totalScore); 
